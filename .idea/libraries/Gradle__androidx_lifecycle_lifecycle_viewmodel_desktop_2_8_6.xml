@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.lifecycle:lifecycle-viewmodel-desktop:2.8.6" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="androidx.lifecycle" artifactId="lifecycle-viewmodel-desktop" version="2.8.6" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel-desktop/2.8.6/572f6fed6a70c5d87c9a0d17d05828ff1a6f19f8/lifecycle-viewmodel-desktop-2.8.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel-desktop/2.8.6/a87a69642048e680f59c520196f0fb889e9a9281/lifecycle-viewmodel-desktop-2.8.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

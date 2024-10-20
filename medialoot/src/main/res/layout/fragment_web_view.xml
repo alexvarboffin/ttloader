@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.YoutubeActivity">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lay_search" />
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/lay_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp">
+
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight=".15"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:tint="@color/black" />
+
+
+                <ImageView
+                    android:id="@+id/btn_home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight=".15"
+                    android:padding="@dimen/_6sdp"
+
+                    android:src="@drawable/ic_home_black_24dp"
+                    android:tint="@color/black" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight=".85"
+                    app:cardBackgroundColor="#E9E2E2"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <EditText
+                        android:id="@+id/et_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:layout_marginRight="@dimen/_7sdp"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter url or text for search"
+                        android:imeOptions="actionSearch"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <ImageView
+                    android:id="@+id/btn_search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".15"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_search_black_24dp"
+                    android:tint="@color/black" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_4sdp"
+            android:layout_below="@+id/lay_search"
+            android:progress="20"
+            android:progressDrawable="@drawable/horizontal_progress"
+            android:secondaryProgress="100"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ad_container"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fabCard"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="@color/colorGray"
+                app:cardCornerRadius="32dp"
+                >
+
+                <ImageView
+                    android:id="@+id/downloadIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_file_download_black_24dp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <!--<ProgressBarandroid:id="@+id/circularProgressbar"android:layout_alignParentEnd="true"android:layout_alignParentRight="true"android:layout_alignParentBottom="true"android:layout_marginEnd="16dp"android:layout_marginRight="16dp"android:layout_marginBottom="20dp"style="?android:attr/progressBarStyleHorizontal"android:layout_width="60dp"android:layout_height="60dp"android:indeterminate="false"android:max="100"android:progress="50"android:progressDrawable="@drawable/circle_progress"android:secondaryProgress="100"/>-->
+
+
+    </RelativeLayout>
+

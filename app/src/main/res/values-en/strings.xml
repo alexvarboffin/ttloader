@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name" translatable="false">Video Downloader</string>
+    <string name="action_download_video">Download</string>
+    <string name="action_download_watermark_free">Download Watermark Free</string>
+    <string name="err_enter_valid_url">Please Enter a valid URI</string>
+
+    <string name="err_something_wrong">Something went wrong while playing local video! Please try again</string>
+    <string name="abc_err_something_wrong_sharing">Something went wrong while sharing local video! Please try again</string>
+    <string name="app_options">Options</string>
+    <string name="text_about">
+\n- How to save video from __appName__ to the device:
+\nEverything is very simple!
+\n
+\nOn the main Download tab of Video Downloader For TikTok
+\nselect and click on the __appName__ icon, if the program is installed,
+\nit will open and we can start saving the video,
+\notherwise we will be asked to install it.
+\n
+\nGoing to TikTok, when viewing a video tape, select the video you want to save.
+\nClick the share button, and share the link with our application. We will do everything ourselves.
+\n
+\nMore details:
+\nAfter opening the ticks, select the video you like, press the button
+\n"share -> 🔗" select Video Downloader For __appName__ from the list,
+\nif the link is received, we can see it in the address field
+\n- Click the download video button.
+\n
+\n
+\n- The option is more complicated:
+\n- Open Video Downloader
+\n- Add the link manually in the input field
+\n- Click the download video button.
+\n
+\n- The video download is displayed in the Android alert.
+\n- After downloading, we can open the video for playback.
+\n- We can transfer the video to another application.
+\n
+\n
+\n- Where the video is saved:
+    </string>
+
+    <string name="launch_app">Open / install application</string>
+    <string name="err_empty_buffer">Clipboard is empty</string>
+    <string name="hint_video_url">Video URL here…</string>
+    <string name="title_settings_no_watermark">No Watermark</string>
+    <string name="title_settings_auto_download">Auto Download</string>
+    <string name="text_remove_watermark">Remove watermark from downloaded localVideo</string>
+    <string name="completed">Completed</string>
+
+    <string name="abc_tab_gallery">Gallery</string>
+    <string name="abc_tab_download">Download</string>
+    <string name="abc_tab_about">About</string>
+
+    <string name="action_share_video">Share</string>
+    <string name="action_delete_video">Delete</string>
+    <string name="err_www_not_support">We cannot allow to download videos form this website.</string>
+
+    <string name="empty_data">Video list is empty</string>
+    <string name="action_folder_open">Open the folder with the file</string>
+    <string name="action_watch">Watch</string>
+    <string name="action_open_browser">Open\nBrowser</string>
+    <string name="abc_choose_an_action">Choose an action</string>
+    <string name="del_confirm">Selected video will be permanently deleted. This action cannot be undone.</string>
+    <string name="abc_simply_copy">Simply copy the link of localVideo to start download</string>
+    <string name="abc_something_went_wrong">Something went wrong!</string>
+    <string name="app_twitter">Twitter</string>
+    <string name="access_error">Access error</string>
+    <string name="clipboard_service_action_stop">Stop</string>
+</resources>

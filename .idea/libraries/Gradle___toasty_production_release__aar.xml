@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :toasty-production-release:@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/294d2f6d1d6518b4185bdae1a0f7a8d9/transformed/jetified-toasty-production-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/294d2f6d1d6518b4185bdae1a0f7a8d9/transformed/jetified-toasty-production-release/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/294d2f6d1d6518b4185bdae1a0f7a8d9/transformed/jetified-toasty-production-release/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

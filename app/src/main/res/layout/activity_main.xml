@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E6F1"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.main.MainActivity">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/coordinator2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_height"
+            android:background="@drawable/gradient_title_bar_primary_color_and_accent_color"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:titleEnabled="false"
+                app:toolbarId="@+id/toolbar">
+
+                <!--    app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"-->
+                <!--      @drawable/tile_background          android:background="@drawable/material_leef_header"-->
+                <RelativeLayout
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+                    <!--                    <ImageView-->
+                    <!--                        android:id="@+id/logo"-->
+                    <!--                        android:layout_width="80dp"-->
+                    <!--                        android:layout_height="80dp"-->
+                    <!--                        android:layout_centerInParent="true"-->
+                    <!--                        android:adjustViewBounds="true"-->
+                    <!--                        android:contentDescription="@null"-->
+                    <!--                        android:gravity="center_horizontal"-->
+                    <!--                        android:src="@mipmap/ic_launcher_round"-->
+                    <!--                        android:textAlignment="center" />-->
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/AppTheme.AppName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="false"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="8dp"
+                        android:text="@string/app_name"
+                        android:textAlignment="center"
+                        android:textColor="#F3EFEE"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_version"
+                        style="@style/AppTheme.AppName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp"
+                        tools:text="@string/app_name" />
+                </RelativeLayout>
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                <!--                app:tabBackground="@drawable/tab_selector"-->
+                <!--                <View-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="10dp"-->
+                <!--                    android:layout_gravity="bottom"-->
+                <!--                    android:background="#D30909" />-->
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/tab_gradient"
+                    android:fitsSystemWindows="true"
+                    android:paddingTop="8dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    app:layout_collapseMode="pin"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:tabContentStart="72dp"
+                    app:tabGravity="fill"
+                    app:tabIconTint="#FFFFFF"
+                    app:tabIndicatorColor="#FF9900"
+                    app:tabIndicatorHeight="5dp"
+                    app:tabMode="fixed"
+                    app:tabPaddingEnd="12dp"
+                    app:tabPaddingStart="12dp"
+                    app:tabSelectedTextColor="#FFFFFF"
+                    app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                    app:tabTextColor="#FFFFFF" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+<!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                    android:id="@+id/fab"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="@dimen/fab_margin"-->
+
+<!--                    app:layout_anchor="@id/app_bar"-->
+<!--                    app:layout_anchorGravity="bottom|end"-->
+<!--                    app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+
+        <nl.dionsegijn.konfetti.xml.KonfettiView
+            android:id="@+id/konfettiView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/layout_snackbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="88dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            >
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end">
+
+        <FrameLayout
+            android:id="@+id/bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:paddingTop="4dp">
+<!--            <com.google.android.gms.ads.AdView-->
+<!--                android:id="@+id/adView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                app:adSize="BANNER"-->
+<!--                app:adUnitId="@string/b1" />-->
+        </FrameLayout>
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab0"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="@dimen/fab_margin"-->
+
+<!--            app:layout_anchor="@id/bottom_container"-->
+<!--            app:layout_anchorGravity="top|end"-->
+<!--            app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="@dimen/fab_margin"-->
+
+<!--            app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

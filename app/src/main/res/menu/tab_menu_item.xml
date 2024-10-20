@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tabGallery"
+        android:icon="@drawable/ic_file_download_black_24dp"
+        android:title="@string/abc_tab_gallery" />
+
+    <item
+        android:id="@+id/tabDownload"
+        android:icon="@drawable/ic_archive"
+        android:title="@string/abc_tab_download"  />
+
+    <item
+        android:id="@+id/tabAbout"
+        android:icon="@drawable/ic_info"
+        android:title="@string/abc_tab_about"  />
+</menu>

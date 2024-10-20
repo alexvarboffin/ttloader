@@ -1,0 +1,20 @@
+plugins {
+    id 'java-library'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+//noinspection GradleDependency
+dependencies {
+    implementation 'org.jsoup:jsoup:1.17.2'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:4.7.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.12.0'
+    implementation 'com.google.code.gson:gson:2.11.0'
+    implementation 'org.json:json:20210307' // Это последняя версия на момент моего обновления.
+
+}

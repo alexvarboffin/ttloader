@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_facebook" translatable="false">Facebook</string>
+    <string name="app_facebookLite" translatable="false">Lite</string>
+
+    <string name="app_tiktok" translatable="false">TikTok</string>
+    <string name="app_instagram" translatable="false">Instagram</string>
+    <string name="app_youtube" translatable="false">Youtube</string>
+    <string name="app_tiktok_musical" translatable="false">Musical.ly</string>
+</resources>

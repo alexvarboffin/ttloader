@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/numberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="OK" />
+
+    <Button
+        android:id="@+id/fdroid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="F-Droid" />
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выберите Intent"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupIntents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioLikee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LikeeIntent"/>
+
+            <RadioButton
+                android:id="@+id/radioTiktok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TiktokIntent"/>
+
+            <RadioButton
+                android:id="@+id/radioOkru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OkruIntent"/>
+
+            <RadioButton
+                android:id="@+id/radioYoutube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YoutubeIntent"/>
+
+            <RadioButton
+                android:id="@+id/radioInstagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="InstagramIntent"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

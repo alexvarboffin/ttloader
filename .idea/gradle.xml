@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$USER_HOME$/.gradle/wrapper/dists/gradle-7.5-bin/f1w0cc9nuo0eivz97x2xlu9sv/gradle-7.5" />
+        <option name="gradleJvm" value="17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../../../kwork/IncomingPhone/app" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Desktop" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/intentresolver" />
+            <option value="$PROJECT_DIR$/../../sdk/android/UI/features/ui" />
+            <option value="$PROJECT_DIR$/../../sdk/android/multithreader/threader" />
+            <option value="$PROJECT_DIR$/../../sdk/android/ui/features/permissionResolver" />
+            <option value="$PROJECT_DIR$/../../sdk/android/ui/features/wads" />
+          </set>
+        </option>
+        <option name="resolveExternalAnnotations" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

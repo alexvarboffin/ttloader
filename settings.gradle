@@ -1,0 +1,23 @@
+include ':app'
+rootProject.name = "ttloader"
+//include ':medialoot'
+include ':Desktop'
+
+include ':features:ui'
+project(':features:ui').projectDir = new File('D:\\walhalla\\sdk\\android\\UI\\features\\ui\\')
+
+include ':threader'
+project(':threader').projectDir = new File('D:\\walhalla\\sdk\\android\\multithreader\\threader\\')
+
+include ':features:wads'
+project(':features:wads').projectDir = new File('D:\\walhalla\\sdk\\android\\ui\\features\\wads\\')
+
+//include ':library'
+//project(':library').projectDir = new File('C:\\Users\\combo\\Desktop\\loader\\youtube-dl-android\\library\\')
+
+include ':service'
+project(':service').projectDir = new File('D:\\kwork\\IncomingPhone\\app')
+
+include ':features:permissionResolver'
+project(':features:permissionResolver').projectDir = new File('D:\\walhalla\\sdk\\android\\ui\\features\\permissionResolver')
+include ':intentresolver'

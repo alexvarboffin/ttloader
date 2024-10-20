@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="yt_share_description">%1$s\n\nDownload our "Islamic Quotes" app
+        \n🌟 "Islamic Quotes" 🌟
+        \n🔗 https://bit.ly/3Wb9iMU
+        \n
+        \n🌟 "Muslim Helper: Prayer &amp; Qibla - Apps on Google Play"
+        \n🔗 https://bit.ly/3Zc8o4A
+        \n
+        \n🕋 "Makkah and Madinah Live - Apps on Google Play"
+        \n🔗 https://bit.ly/3Xu2fj0
+
+
+\n\n%2$s\n\n\nYour Queries:\n%3$s</string>
+    <string name="SharingVideoBody">Sharing Video File</string>
+    <string name="sharing_video_title">Sharing Video</string>
+</resources>

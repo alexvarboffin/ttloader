@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?><androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff3fbfc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:orientation="vertical"
+        android:background="#fff3fbfe"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <ImageView
+                android:id="@+id/ivscroll"
+                android:layout_width="fill_parent"
+                android:layout_height="250.0dip"
+                android:layout_marginTop="10.0dip"
+                app:layout_collapseMode="parallax"
+                android:src="@drawable/dummy"/>
+
+
+            <View
+                android:background="#ffddecf0"
+                android:layout_width="110.0dip"
+                android:layout_height="3.0dip"
+                android:layout_marginBottom="10.0dip" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/grammarLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="125.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_weight="1.0"
+                        app:cornerRadius="7.0dip">
+
+                        <RelativeLayout
+                            android:background="@drawable/search_btn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:layout_marginLeft="10.0dip"
+                                android:src="@drawable/ic_search_black_24dp2"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20.0sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:layout_marginRight="7.0dip"
+                                android:layout_marginBottom="7.0dip"
+                                android:text="@string/search"
+                                android:layout_alignParentBottom="true"
+                                android:textAllCaps="false"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/sunkarLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="125.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_weight="1.0"
+                        app:cornerRadius="7.0dip">
+
+                        <RelativeLayout
+                            android:background="@drawable/download_btn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:layout_marginLeft="10.0dip"
+                                android:src="@drawable/ic_file_download_white_50dp"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20.0sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:layout_marginRight="7.0dip"
+                                android:layout_marginBottom="7.0dip"
+                                android:text="DOWNLOAD"
+                                android:layout_alignParentBottom="true"
+                                android:textAllCaps="false"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/verbLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="125.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_weight="1.0"
+                        app:cornerRadius="7.0dip">
+
+                        <RelativeLayout
+                            android:background="@drawable/share_btn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:layout_marginLeft="10.0dip"
+                                android:src="@drawable/ic_share_white_50dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20.0sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:layout_marginRight="7.0dip"
+                                android:layout_marginBottom="7.0dip"
+                                android:text="SHARE"
+                                android:layout_alignParentBottom="true"
+                                android:textAllCaps="false"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/tenseLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="125.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_weight="1.0"
+                        app:cornerRadius="7.0dip">
+
+                        <RelativeLayout
+                            android:background="@drawable/rateus_btn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:layout_marginLeft="10.0dip"
+                                android:src="@drawable/ic_star_white_50dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20.0sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:layout_marginRight="7.0dip"
+                                android:layout_marginBottom="7.0dip"
+                                android:text="RATE US"
+                                android:layout_alignParentBottom="true"
+                                android:textAllCaps="false"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/wordsLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="125.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_weight="1.0"
+                        app:cornerRadius="7.0dip">
+
+                        <RelativeLayout
+                            android:background="@drawable/moreapp_btn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:layout_marginLeft="10.0dip"
+                                android:src="@drawable/ic_apps_white_50dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20.0sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:layout_marginRight="7.0dip"
+                                android:layout_marginBottom="7.0dip"
+                                android:text="MORE APPS"
+                                android:layout_alignParentBottom="true"
+                                android:textAllCaps="false"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/testLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="125.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_weight="1.0"
+                        app:cornerRadius="7.0dip">
+
+                        <RelativeLayout
+                            android:background="@drawable/privacypolicy_btn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:layout_marginLeft="10.0dip"
+                                android:src="@drawable/ic_share_white_50dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20.0sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:layout_marginRight="7.0dip"
+                                android:layout_marginBottom="7.0dip"
+                                android:text="PRIVACY POLICY"
+                                android:layout_alignParentBottom="true"
+                                android:textAllCaps="false"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

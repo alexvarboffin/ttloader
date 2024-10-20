@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ttloader.iml" filepath="$PROJECT_DIR$/.idea/modules/ttloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Desktop/ttloader.Desktop.iml" filepath="$PROJECT_DIR$/.idea/modules/Desktop/ttloader.Desktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Desktop/ttloader.Desktop.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Desktop/ttloader.Desktop.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Desktop/ttloader.Desktop.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Desktop/ttloader.Desktop.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ttloader.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ttloader.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ttloader.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ttloader.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ttloader.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ttloader.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ttloader.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ttloader.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/ttloader.features.iml" filepath="$PROJECT_DIR$/.idea/modules/features/ttloader.features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1504295121/ttloader.features.permissionResolver.iml" filepath="$PROJECT_DIR$/.idea/modules/1504295121/ttloader.features.permissionResolver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1504295121/ttloader.features.permissionResolver.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1504295121/ttloader.features.permissionResolver.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1504295121/ttloader.features.permissionResolver.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1504295121/ttloader.features.permissionResolver.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1504295121/ttloader.features.permissionResolver.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1504295121/ttloader.features.permissionResolver.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-950076272/ttloader.features.ui.iml" filepath="$PROJECT_DIR$/.idea/modules/-950076272/ttloader.features.ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-950076272/ttloader.features.ui.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-950076272/ttloader.features.ui.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-950076272/ttloader.features.ui.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-950076272/ttloader.features.ui.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-950076272/ttloader.features.ui.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-950076272/ttloader.features.ui.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1804791765/ttloader.features.wads.iml" filepath="$PROJECT_DIR$/.idea/modules/1804791765/ttloader.features.wads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1804791765/ttloader.features.wads.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1804791765/ttloader.features.wads.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1804791765/ttloader.features.wads.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1804791765/ttloader.features.wads.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1804791765/ttloader.features.wads.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1804791765/ttloader.features.wads.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/intentresolver/ttloader.intentresolver.iml" filepath="$PROJECT_DIR$/.idea/modules/intentresolver/ttloader.intentresolver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/intentresolver/ttloader.intentresolver.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/intentresolver/ttloader.intentresolver.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/intentresolver/ttloader.intentresolver.main.iml" filepath="$PROJECT_DIR$/.idea/modules/intentresolver/ttloader.intentresolver.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/intentresolver/ttloader.intentresolver.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/intentresolver/ttloader.intentresolver.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1848198002/ttloader.service.iml" filepath="$PROJECT_DIR$/.idea/modules/-1848198002/ttloader.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1848198002/ttloader.service.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1848198002/ttloader.service.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1848198002/ttloader.service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1848198002/ttloader.service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1848198002/ttloader.service.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1848198002/ttloader.service.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/897112027/ttloader.threader.iml" filepath="$PROJECT_DIR$/.idea/modules/897112027/ttloader.threader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/897112027/ttloader.threader.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/897112027/ttloader.threader.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/897112027/ttloader.threader.main.iml" filepath="$PROJECT_DIR$/.idea/modules/897112027/ttloader.threader.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/897112027/ttloader.threader.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/897112027/ttloader.threader.unitTest.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_twitter">Twitter</string>
+    <string name="app_twitter_lite" translatable="false">Twitter Lite</string>
+    <string name="app_tumblr">Tumblr</string>
+    <string name="app_reddit">Reddit</string>
+    <string name="app_likee">Likee</string>
+    <string name="app_pinterest">Pinterest</string>
+    <string name="app_pinterestLite">Pinterest Lite</string>
+    <string name="app_okru">OK</string>
+    <string name="app_tiktok_musical_lite">TikTok Lite</string>
+    <string name="app_triller">Triller</string>
+    <string name="app_kwai">Kwai</string>
+    <string name="app_okrulive">OK Live</string>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPinterestLite">#FE7172</color>
+    <color name="error">#F80A38</color>
+
+
+    <color name="never">#FFAB00</color>
+    <color name="gonna">#792962FF</color>
+    <color name="let">#AA00FF</color>
+    <color name="you">#FFFFFF</color>
+
+
+    <color name="colorControlNormal">#000000</color>
+
+</resources>

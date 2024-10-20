@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activitycontent.ScreenCastActivity">
+    <item
+        android:id="@+id/play_action_btn"
+        android:title="@string/play_action_btn" />
+    <item
+        android:id="@+id/remove_action_btn"
+        android:icon="@drawable/ic_instagram"
+        android:title="@string/remove_action_btn" />
+    <item
+        android:id="@+id/rename_action_btn"
+        android:icon="@drawable/insta"
+        android:title="@string/rename_action_btn" />
+    <item
+        android:id="@+id/moveFile"
+        android:title="@string/move" />
+    <item
+        android:id="@+id/share_action_btn"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/share_action_btn" />
+</menu>

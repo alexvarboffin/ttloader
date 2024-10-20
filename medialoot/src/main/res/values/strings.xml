@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Media Loot</string>
+    <string name="quition">\?</string>
+
+    <string name="BYTE_Size">%1$.1f B</string>
+    <string name="KB_Size">%1$.1f KB</string>
+    <string name="MB_Size">%1$.1f MB</string>
+    <string name="GB_Size">%1$.1f GB</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint">Enter url or text for search</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="play_action_btn">Play</string>
+    <string name="remove_action_btn">Remove</string>
+    <string name="rename_action_btn">Rename</string>
+    <string name="move">Move</string>
+    <string name="share_action_btn">Share</string>
+    <string name="completed_downloads">Completed Downloads</string>
+    <string name="search">SEARCH</string>
+
+    <string name="do_you_really_want_to_quit">Do you really want to Quit ?</string>
+
+
+    <string name="admob_appid">ca-app-pub-7902955852784415~6503782064</string>
+
+<!--  test ad units-->
+
+<!--    <string name="admob_banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_intrestial">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_reward">ca-app-pub-3940256099942544/5224354917</string>
+
+    <string name="admob_nativ">ca-app-pub-3940256099942544/2247696110</string>-->
+
+
+    <!--   live ad units-->
+
+
+    <string name="admob_banner">ca-app-pub-7902955852784415/8021233081</string>
+    <string name="admob_intrestial">ca-app-pub-7902955852784415/6312210376</string>
+    <string name="admob_reward">ca-app-pub-7902955852784415/7433720352</string>
+    <string name="admob_nativ">ca-app-pub-7902955852784415/8516358429</string>
+
+</resources>

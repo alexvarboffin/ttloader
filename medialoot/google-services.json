@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "977146020076",
+    "firebase_url": "https://medialoot-51b1f.firebaseio.com",
+    "project_id": "medialoot-51b1f",
+    "storage_bucket": "medialoot-51b1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977146020076:android:8b0cb0be4db36407f865c9",
+        "android_client_info": {
+          "package_name": "com.retrytech.medialoot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977146020076-evrangggfcq6r0oa094gm4p18jb98a2q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.retrytech.medialoot",
+            "certificate_hash": "72065046ad206699b45aa58e76d38b50f812856a"
+          }
+        },
+        {
+          "client_id": "977146020076-5l70huqt9sn66vcvnmpaqm6m90c484gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvW6JM6zXEeHyIjSkSRUfofUjuX43R05w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977146020076-5l70huqt9sn66vcvnmpaqm6m90c484gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

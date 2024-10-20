@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--    corrdinatorLaouy으로 바꿈 - -->
+    <!--    material이기에 project structure  해야함.-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:rippleColor="@color/colorAccent"
+        app:fabSize="auto"
+        android:src="@android:drawable/ic_input_add"
+        android:onClick="clickfab"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show snackbar"
+        android:layout_gravity="center"
+        />
+    <!--    relative를 제외한 나머지 view들을 align이 없어서 gravirit로 이동-->
+
+    <!--    스낵바가 놓여질 위치의 기준 뷰-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/layout_snackbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="88dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <!--    backgroundTint로 사용한다. -->
+    <!--    fab는 float action button의 줄인말-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

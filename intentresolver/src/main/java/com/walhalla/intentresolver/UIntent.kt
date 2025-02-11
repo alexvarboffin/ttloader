@@ -1,13 +1,12 @@
-package com.walhalla.intentresolver;
+package com.walhalla.intentresolver
 
-import android.content.Context;
+import android.content.Context
+import java.io.File
 
-import java.io.File;
+interface UIntent {
+    fun shareMp4Selector(context: Context, file: File)
 
-public interface UIntent {
-   void shareMp4Selector(Context context, File file);
+    fun isClientPackage(packageName: String?): Boolean
 
-    boolean isClientPackage(String packageName);
-
-    void videoShare(Context context, String path);
+    fun videoShare(context: Context, path: String)
 }

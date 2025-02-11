@@ -1,47 +1,44 @@
-package com.walhalla.intentresolver;
+package com.walhalla.intentresolver
 
-import android.content.Context;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
-import android.net.Uri;
+import android.content.Context
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.content.pm.ResolveInfo
+import android.net.Uri
+import com.walhalla.ui.BuildConfig
+import com.walhalla.ui.DLog
 
+abstract class BaseIntent(@JvmField var packageName: String?) : UIntent {
 
-import com.walhalla.ui.BuildConfig;
-import com.walhalla.ui.DLog;
-
-import java.util.List;
-
-public abstract class BaseIntent implements UIntent {
-
-    String packageName;
-
-    public BaseIntent(String packageName) {
-        this.packageName = packageName;
-    }
-
-    public boolean isClientPackage(String packageName) {
-        return this.packageName != null && this.packageName.equals(packageName);
+    override fun isClientPackage(packageName: String?): Boolean {
+        return this.packageName != null && this.packageName == packageName
     }
 
 
-    protected List<ResolveInfo> resolveForUri(Context context, Intent intent, Uri contentUri) {
-        List<ResolveInfo> resInfoList = context.getPackageManager().queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY);
-        if (!resInfoList.isEmpty()) {
-            for (ResolveInfo resolveInfo : resInfoList) {
-                String packageName = resolveInfo.activityInfo.packageName;
-                String activityName = resolveInfo.activityInfo.name;
+    protected fun resolveForUri(
+        context: Context,
+        intent: Intent,
+        contentUri: Uri
+    ): List<ResolveInfo> {
+        val resInfoList =
+            context.packageManager.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY)
+        if (resInfoList.isNotEmpty()) {
+            for (resolveInfo in resInfoList) {
+                val packageName = resolveInfo.activityInfo.packageName
+                val activityName = resolveInfo.activityInfo.name
                 if (BuildConfig.DEBUG) {
-                    DLog.d("[@@@@@" + packageName + "]" + activityName + "@@]");
+                    DLog.d("[@@@@@$packageName]$activityName@@]")
                 }
-                context.grantUriPermission(packageName, contentUri,
-                        Intent.FLAG_GRANT_WRITE_URI_PERMISSION
-                                | Intent.FLAG_GRANT_READ_URI_PERMISSION
-                                | Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);
+                context.grantUriPermission(
+                    packageName, contentUri,
+                    (Intent.FLAG_GRANT_WRITE_URI_PERMISSION
+                            or Intent.FLAG_GRANT_READ_URI_PERMISSION
+                            or Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION)
+                )
             }
         } else {
-            DLog.d("Not found activity...");
+            DLog.d("Not found activity...")
         }
-        return resInfoList;
+        return resInfoList
     }
 }

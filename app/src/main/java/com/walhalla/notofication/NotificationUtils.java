@@ -17,7 +17,7 @@ import androidx.core.app.NotificationManagerCompat;
 
 import com.walhalla.ttvloader.R;
 import com.walhalla.ttvloader.activity.main.MainActivity;
-import com.walhalla.ttvloader.receiver.MyBroadcastReceiver;
+import com.walhalla.ttvloader.receiver.DownloadBroadcastReceiver;
 import com.walhalla.ui.DLog;
 
 public class NotificationUtils {
@@ -93,7 +93,7 @@ public class NotificationUtils {
             builder.setSound(null);
             builder.setOnlyAlertOnce(true);
             builder.setAutoCancel(false);
-            builder.addAction(R.drawable.ic_notification, "Stop", makePendingIntent(context, "quit_action", MyBroadcastReceiver.class));
+            builder.addAction(R.drawable.ic_notification, "Stop", makePendingIntent(context, "quit_action", DownloadBroadcastReceiver.class));
             Intent intent = new Intent(context, MainActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, flag0);

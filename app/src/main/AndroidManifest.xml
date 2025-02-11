@@ -935,7 +935,7 @@
         </activity>
 
         <receiver
-            android:name=".receiver.MyBroadcastReceiver"
+            android:name=".receiver.DownloadBroadcastReceiver"
             android:enabled="true"
             android:exported="true"
             tools:ignore="ExportedReceiver">

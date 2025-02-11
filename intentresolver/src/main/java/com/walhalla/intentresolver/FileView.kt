@@ -1,13 +1,10 @@
-package com.walhalla.intentresolver;
+package com.walhalla.intentresolver
 
-import android.content.Intent;
+import android.content.Intent
+import java.io.File
 
-import java.io.File;
-
-public interface FileView {
-    void openFolderChooser(Intent intent);
-    void showSelectedFolder(File folderPath);
-    void showError(String message);
-
-    //void shareMp4Selector(File file, String o);
+interface FileView {
+    fun openFolderChooser(intent: Intent?)
+    fun showSelectedFolder(folderPath: File?)
+    fun showError(message: String?) //void shareMp4Selector(File file, String o);
 }

@@ -1,57 +1,59 @@
-package com.walhalla.intentresolver.utils;
+package com.walhalla.intentresolver.utils
+
+import android.content.Context
+import com.walhalla.intentresolver.R
+import com.walhalla.intentresolver.utils.TextUtilz.divideString
+import com.walhalla.intentresolver.utils.TextUtilz.selectAndShuffleTags
+import java.io.File
+import java.util.Arrays
+import java.util.Collections
 
 
-import android.content.Context;
-
-
-import com.walhalla.intentresolver.R;
-
-import java.io.File;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-public class YoutubeUtils {
-
-//    static String _description_ = "%1s\n" +
-//            "\n" +
-//            "\n" +
-//            "\n" +
-//            "\n" +
-//            "%1s\n" +
-//            "\n" +
-//            "\n" +
-//            "Your Queries:\n" +
-//            "%3s"
-////             +"\n"
-////            +"COPYRIGHT DISCLAIMER:\n" +
-////            "copyright Act 1976, allowance is mad for FAIR USE for purpose such a as criticism, comment, news reporting, teaching, scholarship and research. Fair use is a use permitted by copyright statues that might otherwise be infringing. Non- Profit, educational or personal use tips the balance in favor of FAIR USE."
-//            ;
-
-    public static String generateTitle(File file) {
-        String simpleTitle = file.getName();
-        String clearTmpl = simpleTitle
-                .replace("__", "/");
-        return clearTmpl.split("_")[1];
+object YoutubeUtils {
+    //    static String _description_ = "%1s\n" +
+    //            "\n" +
+    //            "\n" +
+    //            "\n" +
+    //            "\n" +
+    //            "%1s\n" +
+    //            "\n" +
+    //            "\n" +
+    //            "Your Queries:\n" +
+    //            "%3s"
+    ////             +"\n"
+    ////            +"COPYRIGHT DISCLAIMER:\n" +
+    ////            "copyright Act 1976, allowance is mad for FAIR USE for purpose such a as criticism, comment, news reporting, teaching, scholarship and research. Fair use is a use permitted by copyright statues that might otherwise be infringing. Non- Profit, educational or personal use tips the balance in favor of FAIR USE."
+    //            ;
+    @JvmStatic
+    fun generateTitle(file: File): String {
+        val simpleTitle = file.name
+        val clearTmpl = simpleTitle
+            .replace("__", "/")
+        return clearTmpl.split("_".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[1]
     }
 
-    private static String format1(List<String> qq) {
-        String xx = String.join(", ", qq).replace("#", "");
-        List<String> m1 = TextUtilz.divideString(xx, 10);
-        return String.join("\n", m1).trim() + ".";
+    private fun format1(qq: List<String?>): String {
+        val xx = java.lang.String.join(", ", qq).replace("#", "")
+        val m1 = divideString(xx, 10)
+        return java.lang.String.join("\n", m1).trim { it <= ' ' } + "."
     }
 
-    public static String generateDescriptionFromTemplate(Context context, List<String> tags, String simpleTitle) {
-        String tagText = TextUtilz.selectAndShuffleTags(tags, 450);
-        String[] mm = tagText.split(" ");
-        List<String> qq = Arrays.asList(mm);
-        Collections.shuffle(qq);
-        String xx = format1(qq);
+    fun generateDescriptionFromTemplate(
+        context: Context,
+        tags: List<String>,
+        simpleTitle: String
+    ): String {
+        val tagText = selectAndShuffleTags(tags, 450)
+        val mm = tagText.split(" ".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+        val qq = Arrays.asList(*mm)
+        Collections.shuffle(qq)
+        val xx = format1(qq)
 
-        List<String> m1 = TextUtilz.divideString(tagText, 10);
+        val m1 = divideString(tagText, 10)
 
-        String tagzz = String.join("\n", m1);
-        String txt = String.format(context.getString(R.string.yt_share_description), simpleTitle, tagzz, xx);
-        return txt;
+        val tagzz = java.lang.String.join("\n", m1)
+        val txt =
+            String.format(context.getString(R.string.yt_share_description), simpleTitle, tagzz, xx)
+        return txt
     }
 }

@@ -1,7 +1,5 @@
 package com.walhalla.intentresolver;
 
-import static com.walhalla.abcsharedlib.Share.comPinterestEXTRA_DESCRIPTION;
-import static com.walhalla.abcsharedlib.Share.email;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -85,7 +83,7 @@ public class IntentUtils {
         intent.putExtra(Share.comPinterestEXTRA_DESCRIPTION, content);
         if (BuildConfig.DEBUG) {
             //intent.putExtra(Intent.EXTRA_EMAIL, email);
-            intent.putExtra(Intent.EXTRA_EMAIL, new String[]{Share.email});
+            //intent.putExtra(Intent.EXTRA_EMAIL, new String[]{Share.email});
         }
         return intent;
     }

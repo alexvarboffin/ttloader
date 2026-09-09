@@ -1,7 +1,6 @@
 package com.walhalla;
 
 import static com.walhalla.abcsharedlib.SharedNetwork.Package;
-import static com.walhalla.abcsharedlib.SharedNetwork.Package.tube;
 import static com.walhalla.intentresolver.utils.TextUtilz.dec0;
 
 import android.content.Context;
@@ -82,7 +81,7 @@ public class ConfigUtils {
             if (BuildConfigDEBUG0) {
                 data.add(new AppModel(R.string.app_name, "com.alibaba.aliexpresshd", R.drawable.browser, R.drawable.cerclebackgroundyello));
                 data.add(new AppModel(R.string.app_name, "@@@@", R.drawable.browser, R.drawable.cerclebackgroundyello));
-                data.add(new AppModel(R.string.app_youtube, dec0(tube), R.mipmap.ic_youtube, R.drawable.cerclebackgroundpurple));
+                data.add(new AppModel(R.string.app_youtube, dec0(Package.INSTANCE.getTube()), R.mipmap.ic_youtube, R.drawable.cerclebackgroundpurple));
                 data.add(new AppModel(R.string.app_youtube, "", R.mipmap.ic_youtube, R.drawable.cerclebackgroundpurple));
             }
         }

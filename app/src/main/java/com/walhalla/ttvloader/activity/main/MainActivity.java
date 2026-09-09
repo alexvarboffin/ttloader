@@ -60,6 +60,7 @@ import com.walhalla.ui.UConst;
 import com.walhalla.ui.observer.RateAppModule;
 import com.walhalla.ui.plugins.Launcher;
 import com.walhalla.ui.plugins.Module_U;
+import com.walhalla.ui.plugins.DialogAbout;
 
 import java.io.File;
 import java.util.List;
@@ -203,9 +204,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
-        interactor = new AdvertInteractorImpl(
-                ThreadExecutor.getInstance(),
-                MainThreadImpl.getInstance(), Application.repository);
+        interactor = new AdvertInteractorImpl(Application.repository);
 
 //        try {
 //            YoutubeDL.getInstance().init(getApplication(), this);
@@ -715,7 +714,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
 //                return true;
         int itemId = item.getItemId();
         if (itemId == R.id.action_about) {
-            Module_U.aboutDialog(this);
+            DialogAbout.aboutDialog(this);
             return true;
         } else if (itemId == R.id.action_privacy_policy) {
             Launcher.openBrowser(this, getString(R.string.url_privacy_policy));

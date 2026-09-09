@@ -82,6 +82,10 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
 //    lint {
 //        isAbortOnError = false
 //        isCheckReleaseBuilds = false
@@ -117,7 +121,7 @@ apply(from = "C:\\scripts/copyReports.gradle")
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    //implementation(name = "toasty-production-release", ext = "aar")
+    implementation(files("libs/toasty-production-release.aar"))
 
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -149,9 +153,9 @@ dependencies {
     implementation(libs.kotlin.stdlib)
 
     implementation(libs.apache.commons.lang3)
-//    implementation(libs.media3.exoplayer)
-//    implementation(libs.media3.ui)
-//    implementation(libs.media3.exoplayer.dash)
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.androidx.media3.ui)
+    implementation(libs.androidx.media3.exoplayer.dash)
 
     implementation(libs.sdp.android)
     implementation(libs.logging.interceptor)

@@ -38,7 +38,7 @@ import com.walhalla.adapters.EmptyViewModel;
 
 import com.walhalla.adapters.ExpandableListAdapter;
 import com.walhalla.intentresolver.GoogleDocsUtils;
-import com.walhalla.ttvloader.GlideApp;
+import com.bumptech.glide.Glide;
 import com.walhalla.ttvloader.databinding.DialogExpandableListBinding;
 import com.walhalla.ttvloader.databinding.VideoItemBinding;
 import com.walhalla.intentresolver.UIntent;
@@ -217,7 +217,7 @@ public class VideoStorageAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             LocalVideo item = (LocalVideo) items.get(position);
             VideoViewHolder vh1 = (VideoViewHolder) viewHolder;
             if (DLog.nonNull(item.thumb)) {
-                GlideApp.with(context)
+                Glide.with(context)
                         .load(item.thumb)
                         //.skipMemoryCache(false)
                         .into(vh1.binding.mediaImgBack);

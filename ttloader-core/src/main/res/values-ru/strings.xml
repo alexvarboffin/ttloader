@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="err_www_not_support">Загрузка видео недоступна с данного источника!</string>
+    <string name="abc_something_went_wrong">Something went wrong!</string>
+</resources>

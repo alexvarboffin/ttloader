@@ -10,6 +10,7 @@ plugins {
     alias(libs.plugins.google.gms.google.services)
     alias(libs.plugins.google.firebase.crashlytics)
     alias(libs.plugins.kotlin.android)
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
@@ -91,12 +92,18 @@ android {
         viewBinding = true
         buildConfig = true
     }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
 }
 
 repositories {
     flatDir {
         dirs("libs")
     }
+    google()
+    mavenCentral()
+    maven("https://jitpack.io")
 }
 
 tasks.register<Copy>("copyAabToBuildFolder") {
@@ -113,11 +120,11 @@ tasks.register<Copy>("copyAabToBuildFolder") {
     into(outputDirectory)
 }
 
-apply(from = "C:\\scripts/copyReports.gradle")
+apply(from = rootProject.file("scripts/copyReports.gradle"))
 
 dependencies {
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    //implementation(name = "toasty-production-release", ext = "aar")
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar", "*.aar"))))
+    implementation(files("libs/toasty-production-release.aar"))
 
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -131,9 +138,10 @@ dependencies {
     implementation(libs.circleimageview)
     implementation(libs.jsoup)
     implementation(libs.glide)
+    implementation(project(":ttloader-core"))
     implementation(project(":intentresolver"))
     implementation(project(":features:wads"))
-    annotationProcessor(libs.glide.compiler)
+    kapt(libs.glide.compiler)
     implementation(libs.play.services.ads)
     implementation(libs.androidx.recyclerview)
     implementation(project(":features:permissionResolver"))
@@ -149,9 +157,9 @@ dependencies {
     implementation(libs.kotlin.stdlib)
 
     implementation(libs.apache.commons.lang3)
-//    implementation(libs.media3.exoplayer)
-//    implementation(libs.media3.ui)
-//    implementation(libs.media3.exoplayer.dash)
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.androidx.media3.ui)
+    implementation(libs.androidx.media3.exoplayer.dash)
 
     implementation(libs.sdp.android)
     implementation(libs.logging.interceptor)

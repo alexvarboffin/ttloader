@@ -45,19 +45,19 @@ include(":app")
 //include(":Desktop")
 //
 include(":features:ui")
-project(":features:ui").projectDir = File("C:\\src\\Synced\\WalhallaUI\\features\\ui\\")
+project(":features:ui").projectDir = File("C:\\Synced\\WalhallaUI\\features\\ui\\")
 
 include(":features:wads")
-project(":features:wads").projectDir = File("C:\\src\\Synced\\WalhallaUI\\features\\wads\\")
+project(":features:wads").projectDir = File("C:\\Synced\\WalhallaUI\\features\\wads\\")
 
 include(":threader")
-project(":threader").projectDir = File("D:\\walhalla\\sdk\\android\\multithreader\\threader\\")
+project(":threader").projectDir = File("C:\\Synced\\multithreader\\threader\\")
 
 //include(":features:permissionResolver")
-//project(":features:permissionResolver").projectDir = File("C:\\src\\Synced\\WalhallaUI\\features\\permissionResolver")
+//project(":features:permissionResolver").projectDir = File("C:\\Synced\\WalhallaUI\\features\\permissionResolver")
 //
 include(":shared")
-project(":shared").projectDir = File("C:\\src\\Synced\\WalhallaUI\\shared\\")
+project(":shared").projectDir = File("C:\\Synced\\WalhallaUI\\shared\\")
 
 ////include(":library")
 ////project(":library").projectDir = File("C:\\Users\\combo\\Desktop\\loader\\youtube-dl-android\\library\\")
@@ -67,5 +67,5 @@ project(":shared").projectDir = File("C:\\src\\Synced\\WalhallaUI\\shared\\")
 
 
 include(":features:permissionResolver")
-project(":features:permissionResolver").projectDir = File("C:\\src\\Synced\\WalhallaUI\\features\\permissionResolver")
+project(":features:permissionResolver").projectDir = File("C:\\Synced\\WalhallaUI\\features\\permissionResolver")
 include(":intentresolver")

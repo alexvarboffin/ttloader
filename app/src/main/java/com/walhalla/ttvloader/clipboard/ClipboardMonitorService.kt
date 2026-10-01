@@ -122,10 +122,10 @@ class ClipboardMonitorService : Service(), RepositoryCallback {
             PendingIntent.FLAG_ONE_SHOT
 
         val restartServicePendingIntent = PendingIntent.getService(
-            getApplicationContext(), 1,
+            applicationContext, 1,
             restartServiceIntent, flag0
         )
-        val alarmService = getApplicationContext().getSystemService(ALARM_SERVICE) as AlarmManager
+        val alarmService = applicationContext.getSystemService(ALARM_SERVICE) as AlarmManager
         alarmService.set(
             AlarmManager.ELAPSED_REALTIME,
             SystemClock.elapsedRealtime() + 1000,
@@ -192,7 +192,7 @@ class ClipboardMonitorService : Service(), RepositoryCallback {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                     //Toast.makeText(context, "startClipboardMonitor", Toast.LENGTH_SHORT).show();
                     val intent = Intent(context, ClipboardMonitorService::class.java)
-                    intent.setAction(Config.START_FOREGROUND_ACTION)
+                    intent.action = Config.START_FOREGROUND_ACTION
                     val service = context.startForegroundService(intent)
                 } else {
                     val service =
